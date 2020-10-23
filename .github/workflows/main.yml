@@ -1,0 +1,16 @@
+- name: 'Generate Dashboard'
+  uses: ky4eryavii-pon4o/issue-dashboard@v1
+  with:
+    config: |
+      title: 'Dashboard'
+      output:
+        format: html
+        filename: 'dashboard.html'
+      sections:
+      - title: 'Pull Requests'
+        widgets:
+        - type: 'table'
+          title: 'New Pull Requests (This Week)'
+          issue_query: 'repo:libgit2/libgit2 is:open is:issue created:>{{ date("-7 days") }} sort:created-asc'
+    token: ${{ github.token }}
+    
