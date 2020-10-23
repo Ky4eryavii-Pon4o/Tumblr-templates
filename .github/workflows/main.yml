@@ -18,7 +18,7 @@ jobs:
         path: 'out'
 
     - name: 'Generate Dashboard'
-      uses: ethomson/issue-dashboard@v1
+      uses: ky4eryavii-pon4o/issue-dashboard@v1
       with:
         config: |
           title: 'Dashboard'
