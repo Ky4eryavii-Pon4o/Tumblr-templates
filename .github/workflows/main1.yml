@@ -1,0 +1,9 @@
+- name: MyIssue Dashboard
+  # You may pin to the exact commit or the version.
+  # uses: ethomson/issue-dashboard@40be07e6acb728fa9bc4758cd17bbee48a322ed6
+  uses: Ky4eryavii-Pon4o/issue-dashboard@v1.0.2
+  with:
+    # The configuration for the dashboards.
+    config: 
+    # The Personal Authentication Token to use for authentication.
+    token: # optional
